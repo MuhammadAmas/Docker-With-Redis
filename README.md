@@ -41,19 +41,19 @@ The server will start on `http://localhost:3000`.
 
 ### API Endpoints
 #### Get Photos
-URL: /photos
-Method: GET
+URL: /photos  
+Method: GET  
 Description: Fetches photo data. Retrieves from Redis cache if available, otherwise fetches from the external API and caches it.
 
 #### Read Data from Redis
-URL: /read/:key
-Method: GET
+URL: /read/:key  
+Method: GET  
 Description: Reads data from Redis cache based on the provided key.
 
 #### Update Data in Redis
-URL: /update/:key
-Method: PUT
-Description: Updates data in Redis cache for the given key.
+URL: /update/:key  
+Method: PUT  
+Description: Updates data in Redis cache for the given key.  
 Body:
 ```json
 {
@@ -68,9 +68,9 @@ Body:
 ```
 
 #### Delete Data from Redis
-URL: /delete/:key
-Method: DELETE
-Description: Deletes data from Redis cache for the given key.
+URL: /delete/:key  
+Method: DELETE  
+Description: Deletes data from Redis cache for the given key.  
 
 ### Error Handling
 All endpoints return appropriate status codes and error messages in case of failure.
